@@ -14,7 +14,7 @@ export const regVal = [
 
 export const postCreateVal = [
     body('title', 'title').isLength({min: 3}).isString(),
-    body('text', 'text').isLength({min: 3}).isString(),
-    body('tags', 'tags').isLength({min: 3}).optional().isString(),
+    body('text', 'text').isLength({min: 2}).isString(),
+    body('tags', 'tags').optional().isArray(),
     body('imageUrl', 'imageUrl').optional().isString(),
 ];  
