@@ -2,7 +2,7 @@ import express from "express";
 import multer from "multer";
 import mongoose from "mongoose";
 import cors from "cors";
-import fs from fs;
+import fs from "fs";
 
 import { regVal, loginVal, postCreateVal } from "./validations.js";
 
